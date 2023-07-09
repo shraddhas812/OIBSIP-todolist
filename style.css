@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica, sans-serif';
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url(images/todobg2.png);
+  }
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    
+    padding:13px;
+  }
+  .todo-app{
+      width:100%;
+      max-width:  550px;
+      background:#F4D9E7;
+      margin: 110px auto 25px;
+      padding: 45px 35px 75px;
+      border-radius: 5px;
+  }
+  .todo-app h1{
+      color:black;
+      display: flex;
+      align-items: center;
+      margin-bottom:15px;
+  }
+  .todo-app h1 img{
+    width:40px;
+    margin-left: 15px;
+  }
+  .row{
+    display:flex;
+    align-items: centre;
+    justify-content:space-evenly;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+  input{
+    flex:1;
+    border:black;
+    outline:black;
+    background:transparent;
+    padding:20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  ::-webkit-input-placeholder{
+    color:black;
+    font-weight: bold;
+    font-size: large;
+  }
+  button{
+    border:black;
+    outline:black;
+    padding:20px;
+    background:#FF8551;
+    color:#fff;
+    font-size: 17px;
+    
+    border-radius:40px;
+  }
+  ul li{
+    list-style: none;
+    font-size:19px;
+    font-weight: bold;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+  }
+  ul li::before{
+    content:'';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:url(images/squareboxes.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left:10px;
+  }
+  ul li.done{
+    color:#555;
+    text-decoration:line-through ;
+  }
+  ul li.done::before{
+    background-image: url(images/ortickbox.png);
+    
+  }
+  ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    font-weight: bold;
+    color:black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  ul li span:hover{
+    background:#FF8551;
+  }
+
+  
+
+
+  
+  
